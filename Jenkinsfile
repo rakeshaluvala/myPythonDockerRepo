@@ -3,12 +3,12 @@ pipeline {
     environment{
         registry="436211673009.dkr.ecr.us-east-1.amazonaws.com/testing"
     }
-    stages {/*
-        stage('Checkout from git') {
-            steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'personalcreds', url: 'https://github.com/rakeshaluvala/myPythonDockerRepo.git']]])
-            }
-        }*/
+    stages {
+       // stage('Checkout from git') {
+        //    steps {
+         //       checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'personalcreds', url: 'https://github.com/rakeshaluvala/myPythonDockerRepo.git']]])
+           // }
+       // }
         stage('Build Docker Image'){
             steps{
                 script {
