@@ -12,7 +12,7 @@ pipeline {
         stage('Build Docker Image'){
             steps{
                 script {
-                    dockerImage = docker.build(Dockerfiles) registry
+                    dockerImage = docker.build('Dockerfiles') registry
                 }
             }
         }
