@@ -12,7 +12,8 @@ pipeline {
         stage('Build Docker Image'){
             steps{
                 script {
-                    dockerImage = docker.build('Dockerfiles') registry
+                    docker build -t 436211673009.dkr.ecr.us-east-1.amazonaws.com/testing -f Dockerfiles .
+                    //dockerImage = docker.build('Dockerfiles') registry
                 }
             }
         }
