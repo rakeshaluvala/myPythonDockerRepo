@@ -35,6 +35,7 @@ pipeline {
                     sleep 10
                     kubectl get deployments
                     kubectl get pods
+                    kubectl get services
                     kubectl describe pod my-python-app-deployment-f9c55d9d8-w49mg
                     '''
                 }                
